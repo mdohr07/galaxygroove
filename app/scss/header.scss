@@ -1,0 +1,76 @@
+.header {
+
+    nav {
+        background-color: $purple;
+        padding: 0.625em 1.25em; // 10px 20px
+        border-bottom: 2px solid $pink;
+
+    }
+
+    &__logo {
+
+        img {
+            margin: 0px 0 10px auto;
+            padding: 0;
+            vertical-align: middle;
+        }
+
+    }
+
+    &__menu { // Mobile menu
+
+        > span {
+            display: block;
+            width: 26px;
+            height: 3px;
+            background-color: $white;
+
+            &:not(:last-child) {
+                margin-bottom:3px;
+            }
+            &:hover {
+                color: $pink;
+            }
+        }
+    }
+
+    &__links {
+
+        text-align: center;
+        width: 100%;
+
+        a {
+            position: relative;
+            color: $white;
+            font-size: $font-m;  
+            transition: color 200ms ease-in-out;
+            
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+
+            &:hover {
+                border-bottom: 5px solid $pink;
+                color: $yellow;
+                padding-bottom: 0.9em;
+
+            }
+        }
+    }
+}
+
+// Visibility
+
+.hide-for-mobile {
+    // hide for mobile devices
+    @include breakpoint-down(medium) {
+        display: none;
+    }
+}
+
+.hide-for-desktop {
+    // hide for desktop viewport widths
+    @include breakpoint-up(large) {
+        display: none;
+    }
+}
