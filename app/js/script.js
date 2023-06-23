@@ -10,4 +10,4 @@ burgerBtn.addEventListener('click', function() {
     burgerBtn.classList.add('open'); 
     }
     
-})
+});
