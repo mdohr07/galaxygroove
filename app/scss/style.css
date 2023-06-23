@@ -191,6 +191,7 @@ h2 {
   width: 26px;
   height: 3px;
   background-color: #fff;
+  transition: all 300ms ease-in-out;
 }
 .header__menu > span:not(:last-child) {
   margin-bottom: 5px;
