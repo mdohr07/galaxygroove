@@ -199,8 +199,8 @@ h2 {
   color: #ff12b8;
 }
 .header__links {
-  text-align: right;
-  margin-right: 5%;
+  text-align: center;
+  margin: 0 auto;
   width: 100%;
 }
 .header__links a {
