@@ -145,23 +145,31 @@ h2 {
 
     &__inner {
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
-        align-items:center;
         justify-content: space-between;
 
         &__left {
-            width: 45%;
-            display: flex;
-            flex-wrap: wrap;
+            padding: 20px;
+            flex: 50%;
         }
 
         &__right {
-            width: 45%;
+            padding: 20px;
+            flex: 50%;
+        }
+
+        &__right img {
             display: flex;
-            flex-wrap: wrap;
+            max-width: 100%;
         }
     }
 
+    @media (max-width: 800px) {
+        .infocontent__inner {
+          flex-direction: column;
+        }
+      }
 }
 
  .spacer {
