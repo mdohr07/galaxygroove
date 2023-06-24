@@ -165,7 +165,7 @@ h2 {
         }
     }
 
-    @media (max-width: 800px) {
+        @include breakpoint-down("medium") {
         .infocontent__inner {
           flex-direction: column;
         }

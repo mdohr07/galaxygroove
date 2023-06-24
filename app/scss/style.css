@@ -156,7 +156,7 @@ h2 {
   display: flex;
   max-width: 100%;
 }
-@media (max-width: 800px) {
+@media (max-width: 53.9375em) {
   .infocontent .infocontent__inner {
     flex-direction: column;
   }
