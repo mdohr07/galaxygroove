@@ -23,18 +23,3 @@ $breakpoints-down: ("small": "39.9375em", "medium": "53.9375em", "large": "87.43
         @content;
     }
 }
-
-//video background
-@media (min-aspect-ratio: 16/9) {
-    .bgvideo {
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media (max-aspect-ratio: 16/9) {
-    .bgvideo {
-        width: auto;
-        height: 100%;
-    }
-}

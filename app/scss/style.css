@@ -57,7 +57,7 @@ h2 {
   align-items: center;
 }
 
-.button { /* Button Element & Button class - just in case */
+.button {
   width: 300px;
   background: #ff12b8;
   padding: 0.875em 2.1875em;
@@ -70,7 +70,7 @@ h2 {
   font-weight: 700;
 }
 
-.cta-button { /* Button Element & Button class - just in case */
+.cta-button {
   width: 300px;
   background: #ffde59;
   padding: 0.875em 2.1875em;
@@ -184,6 +184,7 @@ h2 {
 }
 
 .header nav {
+  height: 4.375em;
   background-color: #581778;
   padding: 0.625em 1.25em;
   border-bottom: 2px solid #ff12b8;
@@ -234,6 +235,15 @@ h2 {
   border-bottom: 5px solid #ff12b8;
   color: #ffde59;
   padding-bottom: 0.9em;
+}
+
+.overlay {
+  background-image: linear-gradient(#19161f, transparent);
+  position: absolute;
+  top: 4.375em;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
 }
 
 @media (max-width: 53.9375em) {
