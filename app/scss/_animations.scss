@@ -1,0 +1,12 @@
+@keyframes fade-in {
+    from { // initial styles
+        opacity: 0;
+    }
+
+// whatever happens in-between start and end (optional), like:
+// 50% { ... }
+
+    to { // end styles
+        opacity: 1;
+    }
+}
