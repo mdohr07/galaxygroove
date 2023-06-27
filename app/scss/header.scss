@@ -1,100 +1,106 @@
 .header {
+
   // Hamburger Open Styles
+
   &.open {
+
     .header__menu {
+    
       > span:first-child {
-        transform: rotate(45deg);
+      transform: rotate(45deg);
       }
 
       > span:nth-child(2) {
-        opacity: 0;
+      opacity: 0;
       }
 
       > span:last-child {
-        transform: rotate(-45deg);
+      transform: rotate(-45deg);
       }
     }
   }
 }
 
-.overlay {
-  display: none;
-  background-image: linear-gradient(#{$almostBlack}, transparent);
-  position: absolute;
-  top: 4.375em;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-}
-
-nav {
-  height: 4.375em;
-  background-color: #{$purple};
-  padding: 0.625em 1.25em; // 10px 20px
-  border-bottom: 2px solid #{$pink};
-}
-
-&__logo {
-    margin: 0px 0 10px auto;
-    padding: 0;
-    vertical-align: middle;
-}
-
-&__menu {
-  // Mobile menu
-  > span {
-    display: block;
-    width: 26px;
-    height: 3px;
-    background-color: #{$white};
-    transition: all 300ms ease-in-out;
-    transform-origin: 1px;
-
-    &:not(:last-child) {
-      margin-bottom: 5px;
-    }
-
-    &:hover {
-      color: #{$pink};
-    }
+  .overlay {
+    display: none;
+    background-image: linear-gradient($almostBlack, transparent);
+    position: absolute;
+    top: 4.375em;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
   }
-}
 
-&__links {
-  text-align: center;
-  margin: 0 auto;
-  width: 100%;
+    nav {
+        height: 4.375em;
+        background-color: $purple;
+        padding: 0.625em 1.25em; // 10px 20px
+        border-bottom: 2px solid $pink;
 
-  a {
-    position: relative;
-    color: #{$white};
-    font-size: $font-m;
-    transition: color 200ms ease-in-out;
-
-    &:not(:last-child) {
-      margin-right: 30px;
     }
 
-    &:hover {
-      border-bottom: 5px solid #{$pink};
-      color: #{$yellow};
-      padding-bottom: 0.9em;
+    &__logo {
+            margin: 0px 0 10px auto;
+            padding: 0;
+
     }
-  }
-}
+
+    &__menu { // Mobile menu
+        > span {
+          display: block;
+          width: 26px;
+          height: 3px;
+          background-color: $white;
+          transition: all 300ms ease-in-out;
+          transform-origin: 1px;
+      
+          &:not(:last-child) {
+            margin-bottom: 5px;
+          }
+          &:hover {
+            color: $pink;
+          }
+        }
+      }
+      
+
+    &__links {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+
+        a {
+            position: relative;
+            color: $white;
+            font-size: $font-m;  
+            transition: color 200ms ease-in-out;
+            
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+
+            &:hover {
+                border-bottom: 5px solid $pink;
+                color: $yellow;
+                padding-bottom: 0.9em;
+            }
+        }
+    }
+
+
 
 // Visibility
 
 .hide-for-mobile {
-  // hide for mobile devices
-  @include breakpoint-down(medium) {
-    display: none;
-  }
+    // hide for mobile devices
+    @include breakpoint-down(medium) {
+        display: none;
+    }
 }
 
 .hide-for-desktop {
-  // hide for desktop viewport widths
-  @include breakpoint-up(large) {
-    display: none;
-  }
+    // hide for desktop viewport widths
+    @include breakpoint-up(large) {
+        display: none;
+    }
 }
