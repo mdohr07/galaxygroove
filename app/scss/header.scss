@@ -1,3 +1,6 @@
+@import "variables";
+@import "mixins";
+
 .header {
 
   // Hamburger Open Styles
@@ -40,12 +43,12 @@
         border-bottom: 2px solid $pink;
     }
 
-    &__logo {
+    .header__logo img {
             margin: 0px 0 10px auto;
             padding: 0;
     }
 
-    &__menu { // Mobile menu
+    .header__menu { // Mobile menu
         > span {
           display: block;
           width: 26px;
@@ -64,7 +67,7 @@
       }
       
 
-    &__links {
+    .header__links {
         text-align: center;
         margin: 0 auto;
         width: 100%;

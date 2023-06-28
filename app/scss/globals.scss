@@ -1,3 +1,7 @@
+@import "variables";
+@import "mixins";
+
+
 html {
     font-size: 100%;
     box-sizing: border-box; /* makes the size of elements including border & padding in the final width */
@@ -32,6 +36,14 @@ h2 {
     width: 100%;
     margin-top: 0;
     margin-bottom: 1em;
+}
+
+h3 {
+
+    font-size: $font-m;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0.5em;
 }
 
 // Flexbox
@@ -159,6 +171,7 @@ h2 {
     justify-content: space-between;
 
     &__inner {
+        width: 100%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -187,42 +200,41 @@ h2 {
       }
 }
 
-.infocontent__inner {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
+.infocontent__inner .gallery-item {
+    width: 30%;
+    padding: 0;
+    margin-top: 1em;
+    max-width: 100%;
+    overflow: hidden;
 
-.flex-items:nth-child(1) {
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    @include breakpoint-down("medium") {
+        width: 100%;
+        align-self: center;
+        margin: 0 auto;
+    }
+}
+  
+  .gallery-item:nth-child(2) {
     display: block;
     flex-grow: 0;
     flex-shrink: 1;
     flex-basis: auto;
     align-self: auto;
     order: 0;
-    background-color: $white;
   }
   
-  .flex-items:nth-child(2) {
+  .gallery-item:nth-child(3) {
     display: block;
     flex-grow: 0;
     flex-shrink: 1;
     flex-basis: auto;
     align-self: auto;
     order: 0;
-    background-color: $white;
-  }
-  
-  .flex-items:nth-child(3) {
-    display: block;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: auto;
-    order: 0;
-    background-color: $white;
   }
 
  .spacer {
