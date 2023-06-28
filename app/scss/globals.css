@@ -226,6 +226,16 @@ h3 {
   }
 }
 
+.purplebox .pixelart img {
+  margin: 0.5em;
+}
+
+.purplebox p {
+  color: #ff12b8;
+  margin: 0.5em;
+  text-align: right;
+}
+
 .infocontent__inner .gallery-item {
   width: 30%;
   padding: 0;

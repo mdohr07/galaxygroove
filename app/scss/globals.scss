@@ -200,15 +200,22 @@ h3 {
         }
     }
 
-  
-
         @include breakpoint-down("medium") {
         .infocontent__inner {
           flex-direction: column;
         }
       }
-
 }
+
+.purplebox .pixelart img {
+    margin: 0.5em;
+  }
+
+  .purplebox p {
+    color: $pink;
+    margin: 0.5em;
+    text-align: right;
+  }
 
 .infocontent__inner .gallery-item {
     width: 30%;
