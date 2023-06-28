@@ -199,6 +199,12 @@ h3 {
       -ms-flex: 50%;
           flex: 50%;
 }
+.infocontent__inner__left .purplebox {
+  background-color: #581778;
+  padding: 20px;
+  margin: 0;
+  width: 100%;
+}
 .infocontent__inner__right {
   padding: 20px;
   -webkit-box-flex: 50%;
@@ -230,6 +236,12 @@ h3 {
 .infocontent__inner .gallery-item img {
   width: 100%;
   height: auto;
+}
+.infocontent__inner .gallery-item p {
+  text-align: center;
+}
+.infocontent__inner .gallery-item .queque {
+  color: #581778;
 }
 @media (max-width: 53.9375em) {
   .infocontent__inner .gallery-item {

@@ -180,6 +180,13 @@ h3 {
         &__left {
             padding: 20px;
             flex: 50%;
+
+            .purplebox {
+                background-color: $purple;
+                padding: 20px;
+                margin:0;
+                width: 100%;
+            }
         }
 
         &__right {
@@ -193,11 +200,14 @@ h3 {
         }
     }
 
+  
+
         @include breakpoint-down("medium") {
         .infocontent__inner {
           flex-direction: column;
         }
       }
+
 }
 
 .infocontent__inner .gallery-item {
@@ -210,6 +220,14 @@ h3 {
     img {
         width: 100%;
         height: auto;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .queque {
+        color: $purple;
     }
 
     @include breakpoint-down("medium") {
