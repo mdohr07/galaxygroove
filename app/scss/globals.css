@@ -376,6 +376,7 @@ h3 {
 
 .spacerbottom img {
   text-align: center;
+  vertical-align: top;
 }
 
 .formcontainer {
@@ -428,4 +429,28 @@ form .form-control {
 form .cta-button {
   margin-top: 2em;
   width: 100%;
+}
+
+footer {
+  background-color: #fff;
+  height: 12em;
+  margin-top: 5em;
+  color: #19161f;
+}
+footer p {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+}
+footer .spacertop {
+  background-color: #19161f;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin: 0;
+}
+footer .spacertop img {
+  text-align: center;
+  vertical-align: bottom;
 }

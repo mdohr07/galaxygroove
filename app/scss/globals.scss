@@ -340,6 +340,7 @@ h3 {
 
 .spacerbottom img {
     text-align: center;
+    vertical-align: top;
 }
 
 // Form
@@ -394,4 +395,31 @@ form {
         width: 100%;
     }
     
+}
+
+footer {
+    background-color: $white;
+    height: 12em;
+    margin-top: 5em;
+    color: $almostBlack;
+
+    p {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .spacertop {
+        background-color: $almostBlack;
+        width: 100%;
+        height: auto;
+        text-align: center;  
+        margin: 0;
+    }
+
+    .spacertop img {
+        text-align: center;
+        vertical-align: bottom;
+    }
 }
