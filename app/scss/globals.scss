@@ -134,6 +134,8 @@ h3 {
     justify-content: space-between;
 }
 
+// Video Background
+
 .bgvideo {
     position: absolute;
     right: 0;
@@ -156,6 +158,9 @@ h3 {
     }
   }
 }
+
+
+// Main Content
 
 .infocontent {
     width: 100%;
@@ -183,9 +188,10 @@ h3 {
 
             .purplebox {
                 background-color: $purple;
-                padding: 20px;
-                margin:0;
+                padding: 1em;
                 width: 100%;
+                display: flex;
+                flex-direction: column;
             }
         }
 
@@ -207,15 +213,30 @@ h3 {
       }
 }
 
-.purplebox .pixelart img {
-    margin: 0.5em;
-  }
 
-  .purplebox p {
-    color: $pink;
-    margin: 0.5em;
-    text-align: right;
-  }
+.pixelart {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 1.4em 1em 1.5em auto;
+
+    p {
+        color: $pink;
+        margin: 0.5em;
+        text-align: right;
+        width: 100%;
+      }
+
+      img {
+        margin: 0.5em;
+        max-width: 100%;
+        height: auto;
+      }
+}
+
+// For Tournament Section
 
 .infocontent__inner .gallery-item {
     width: 30%;
@@ -262,6 +283,44 @@ h3 {
     order: 0;
   }
 
+  // For Roleplay Section
+
+.infocontent__inner .card {
+    width: 22%;
+    min-width: 15.625em;
+    padding: 2%;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    max-width: 100%;
+    overflow: hidden;
+    background-color: $white;
+    color: $black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h3 {
+        color: $pink;
+        margin-top: 0;
+        margin-bottom: 2em;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    @include breakpoint-down("medium") {
+        width: 100%;
+        align-self: center;
+        margin: 1em auto;
+        padding: 5%;
+    }
+}
+
+// Spacers
+
  .spacer {
     background-color: $white;
     width: 100%;
@@ -283,3 +342,56 @@ h3 {
     text-align: center;
 }
 
+// Form
+
+.formcontainer {
+    width: 100%;
+    display: flex;
+    background-color: transparent;
+    justify-content: space-around;
+
+    .form-group {
+        text-align: left;
+        margin-bottom: 1em;
+    }
+
+}
+
+form {
+    width: 25em;
+    display: flex;
+    flex-direction: column;
+    background-color: $purple;
+    color: $pink;
+    padding: 2em;
+
+    label {
+        line-height: 2.5em;
+    }
+
+    p {
+        margin-bottom: 3em;
+        text-align: center;
+        color: $white;
+        font-size: $font-l;
+    }
+
+    small {
+        color: $black;
+        margin-top: 1em;
+    }
+
+    .form-control {
+        width: 100%;
+        height: 4em;
+        padding: 1em;
+        border-radius: 0;
+        border: 3px solid $black;
+    }
+
+    .cta-button {
+        margin-top: 2em;
+        width: 100%;
+    }
+    
+}
