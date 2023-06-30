@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins";
+@import "animations";
 
 .header {
 
@@ -15,19 +16,50 @@
     padding: 0;
     }
 
+    &__links {
+      text-align: center;
+      margin: 0 auto;
+      width: 100%;
+
+      a {
+          position: relative;
+          color: $white;
+          font-size: $font-m;  
+          transition: color 200ms ease-in-out;
+
+          &:hover {
+            border-bottom: 7px solid $pink;
+            color: $yellow;
+            padding-bottom: 1em;
+        }
+          
+          &:not(:last-child) {
+              margin-right: 30px;
+          }  
+      }
+  }
 }
 
-/*
-  .overlay {
-    display: none;
-    background-image: linear-gradient($almostBlack, transparent);
-    position: absolute;
-    top: 4.375em;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
+.cta-button { 
+  width: 300px;
+
+  background: $yellow;
+  padding: 0.875em 2.1875em;
+  text-align: center;
+  border: none;
+  border-radius: 0%;
+  cursor: pointer;
+
+  font-family: 'Silkscreen';
+  font-size: $font-l;
+  font-weight: 700;
+
+  @include breakpoint-down("medium") {
+      width: 100%;
+      align-self: center;
+      margin: 0 auto;
   }
-*/
+}
 
     .header__menu { // Mobile menu
         
@@ -47,10 +79,11 @@
             margin-bottom: 5px;
           }
         }
-
+        
         // Hamburger Open Styles
 
         &.open {
+
           > span:first-child {
             transform: rotate(45deg);
           }
@@ -61,37 +94,20 @@
 
           > span:last-child {
             transform: rotate(-45deg);
+            transform-origin: 3px 2px;
           }
         }
       }
-      
 
-    .header__links {
-        text-align: center;
-        margin: 0 auto;
-        width: 100%;
-
-        a {
-            position: relative;
-            color: $white;
-            font-size: $font-m;  
-            transition: color 200ms ease-in-out;
-
-            &:hover {
-              border-bottom: 7px solid $pink;
-              color: $yellow;
-              padding-bottom: 1em;
-          }
-            
-            &:not(:last-child) {
-                margin-right: 30px;
-            }  
+      .overlay {
+        opacity: 0;
+        position: absolute;
+        top: 4.375em;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-image: linear-gradient($almostBlack, transparent);
         }
-
-
-    }
-
-
 
 // Visibility
 

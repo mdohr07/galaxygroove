@@ -81,28 +81,6 @@ h3 {
     font-weight: 700;
 }
 
-.cta-button { 
-    width: 300px;
-
-    background: $yellow;
-    padding: 0.875em 2.1875em;
-    text-align: center;
-    border: none;
-    border-radius: 0%;
-    cursor: pointer;
-
-    font-family: 'Silkscreen';
-    font-size: $font-l;
-    font-weight: 700;
-
-    @include breakpoint-down("medium") {
-        width: 100%;
-        align-self: center;
-        margin: 0 auto;
-    }
-
-}
-
 // Content
 
 .biglogo img {

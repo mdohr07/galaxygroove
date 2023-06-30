@@ -1,5 +1,11 @@
 @keyframes fade-in {
     from { // initial styles
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    1% {
+        visibility: visible;
         opacity: 0;
     }
 
@@ -9,4 +15,33 @@
     to { // end styles
         opacity: 1;
     }
+}
+
+// helper class
+
+.fade-in {
+    animation: fade-in 300ms ease-in-out forwards;
+}
+
+@keyframes fade-out {
+    from { // initial styles
+        opacity: 1;
+        visibility: visible;
+    }
+
+    99% {
+        visibility: visible;
+        opacity: 0;
+    }
+
+    to { // end styles
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+// helper class
+
+.fade-out {
+    animation: fade-out 300ms ease-in-out forwards;
 }
