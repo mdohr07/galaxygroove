@@ -3,25 +3,18 @@
 
 .header {
 
-  // Hamburger Open Styles
-
-  &.open {
-
-    .header__menu {
-    
-      > span:first-child {
-      transform: rotate(45deg);
-      }
-
-      > span:nth-child(2) {
-      opacity: 0;
-      }
-
-      > span:last-child {
-      transform: rotate(-45deg);
-      }
+  nav {
+    height: 4.375em;
+    background-color: $purple;
+    padding: 0.625em 1.25em; // 10px 20px
+    border-bottom: 2px solid $pink;
     }
-  }
+
+    &__logo img {
+    margin: 0px 0 10px auto;
+    padding: 0;
+    }
+
 }
 
 /*
@@ -36,20 +29,9 @@
   }
 */
 
-    nav {
-        height: 4.375em;
-        background-color: $purple;
-        padding: 0.625em 1.25em; // 10px 20px
-        border-bottom: 2px solid $pink;
-    }
-
-    .header__logo img {
-            margin: 0px 0 10px auto;
-            padding: 0;
-    }
-
     .header__menu { // Mobile menu
-        > span {
+        
+      > span {
           display: block;
           width: 26px;
           height: 3px;
@@ -57,11 +39,28 @@
           transition: all 300ms ease-in-out;
           transform-origin: 1px;
       
+          &:hover {
+            color: $pink;
+          }
+
           &:not(:last-child) {
             margin-bottom: 5px;
           }
-          &:hover {
-            color: $pink;
+        }
+
+        // Hamburger Open Styles
+
+        &.open {
+          > span:first-child {
+            transform: rotate(45deg);
+          }
+
+          > span:nth-child(2) {
+            opacity: 0;
+          }
+
+          > span:last-child {
+            transform: rotate(-45deg);
           }
         }
       }
@@ -77,17 +76,19 @@
             color: $white;
             font-size: $font-m;  
             transition: color 200ms ease-in-out;
+
+            &:hover {
+              border-bottom: 7px solid $pink;
+              color: $yellow;
+              padding-bottom: 1em;
+          }
             
             &:not(:last-child) {
                 margin-right: 30px;
-            }
-
-            &:hover {
-                border-bottom: 5px solid $pink;
-                color: $yellow;
-                padding-bottom: 0.9em;
-            }
+            }  
         }
+
+
     }
 
 
