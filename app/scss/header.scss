@@ -4,6 +4,8 @@
 
 .header {
 
+  margin: 0;
+
   nav {
     height: 4.375em;
     background-color: $purple;
@@ -99,6 +101,22 @@
         }
       }
 
+              // The menu when the Hamburger is clicked
+
+              .floatmenu {
+                background-color: $white;
+                padding: 0;
+                margin: 0;
+              
+                a {
+                  color: $black;
+                  padding: 0.625em;
+                  display: block;
+                  text-align: center;
+                }
+              }
+      
+
       .overlay {
         opacity: 0;
         position: absolute;
@@ -123,4 +141,9 @@
     @include breakpoint-up(large) {
         display: none;
     }
+}
+
+// Helper class
+.has-fade {
+    visibility: hidden;
 }
