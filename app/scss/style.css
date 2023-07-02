@@ -652,7 +652,7 @@ footer .spacertop img {
   padding: 0;
   margin: 0;
   position: absolute;
-  width: 100%;
+  min-width: 100%;
 }
 .floatmenu a {
   color: #000;
