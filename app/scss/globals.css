@@ -409,6 +409,9 @@ form .cta-button {
   margin-top: 2em;
   width: 100%;
 }
+form .cta-button a, form .cta-button a:visited, form .cta-button a:active {
+  color: #000;
+}
 
 footer {
   background-color: #fff;
@@ -434,6 +437,9 @@ footer a, footer a:visited, footer a:active {
   color: #19161f;
   margin: 0 2em 0em 2em;
   text-align: center;
+}
+footer a a:hover, footer a:visited a:hover, footer a:active a:hover {
+  color: #000;
 }
 @media (max-width: 53.9375em) {
   footer a, footer a:visited, footer a:active {

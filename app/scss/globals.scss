@@ -371,6 +371,10 @@ form {
     .cta-button {
         margin-top: 2em;
         width: 100%;
+
+        a, a:visited, a:active {
+            color: $black;
+        }
     }
     
 }
@@ -399,6 +403,10 @@ footer {
         color: $almostBlack; 
         margin: 0 2em 0em 2em;
         text-align: center;
+
+        a:hover {
+            color: $black;
+        }
 
         @include breakpoint-down("medium") {
             display: block;
