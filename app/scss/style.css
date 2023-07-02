@@ -499,16 +499,13 @@ footer p {
     margin: 0 auto;
   }
 }
-footer a, footer a:visited, footer a:active {
+footer a, footer a:visited, footer a:active, footer a:hover {
   color: #19161f;
   margin: 0 2em 0em 2em;
   text-align: center;
 }
-footer a a:hover, footer a:visited a:hover, footer a:active a:hover {
-  color: #000;
-}
 @media (max-width: 53.9375em) {
-  footer a, footer a:visited, footer a:active {
+  footer a, footer a:visited, footer a:active, footer a:hover {
     display: block;
     padding: 0.5em;
     margin: 0em 0 2em 0em;

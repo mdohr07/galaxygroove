@@ -399,14 +399,10 @@ footer {
         }
     }
 
-    a, a:visited, a:active {
+    a, a:visited, a:active, a:hover {
         color: $almostBlack; 
         margin: 0 2em 0em 2em;
         text-align: center;
-
-        a:hover {
-            color: $black;
-        }
 
         @include breakpoint-down("medium") {
             display: block;
