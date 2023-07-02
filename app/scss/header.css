@@ -153,6 +153,7 @@
   background-color: #fff;
   padding: 0;
   margin: 0;
+  position: absolute;
 }
 .floatmenu a {
   color: #000;
