@@ -419,6 +419,11 @@ footer {
   margin-top: 5em;
   color: #19161f;
 }
+@media (max-width: 53.9375em) {
+  footer {
+    margin-top: 0.5em;
+  }
+}
 footer p {
   width: 100%;
   margin: 1em auto 0 0;
@@ -442,7 +447,7 @@ footer a, footer a:visited, footer a:active, footer a:hover {
   footer a, footer a:visited, footer a:active, footer a:hover {
     display: block;
     padding: 0.5em;
-    margin: 0em 0 2em 0em;
+    margin: 0;
   }
 }
 footer .spacertop {
