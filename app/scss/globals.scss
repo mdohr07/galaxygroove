@@ -385,10 +385,6 @@ footer {
     margin-top: 5em;
     color: $almostBlack;
 
-    @include breakpoint-down("medium") {
-        margin: 0;
-    }
-
     p {
         width: 100%;
         margin: 1em auto 0 0;
@@ -411,7 +407,7 @@ footer {
         @include breakpoint-down("medium") {
             display: block;
             padding: 0.5em;
-            margin: 0em 0 2em 0em;
+            margin: 0;
         }
     }
 
