@@ -399,7 +399,7 @@ footer {
         @include breakpoint-down("medium") {
             display: block;
             white-space: break-spaces;
-            margin: 0 auto;
+            margin: 0;
         }
     }
 

@@ -435,7 +435,7 @@ footer p {
   footer p {
     display: block;
     white-space: break-spaces;
-    margin: 0 auto;
+    margin: 0;
   }
 }
 footer a, footer a:visited, footer a:active, footer a:hover {
