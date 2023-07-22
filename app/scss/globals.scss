@@ -385,6 +385,10 @@ footer {
     margin-top: 5em;
     color: $almostBlack;
 
+    @include breakpoint-down("medium") {
+        margin: 0;
+    }
+
     p {
         width: 100%;
         margin: 1em auto 0 0;
