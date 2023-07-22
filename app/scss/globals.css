@@ -435,7 +435,7 @@ footer p {
   footer p {
     display: block;
     white-space: break-spaces;
-    margin: 0;
+    margin: 0px;
   }
 }
 footer a, footer a:visited, footer a:active, footer a:hover {
@@ -447,7 +447,7 @@ footer a, footer a:visited, footer a:active, footer a:hover {
   footer a, footer a:visited, footer a:active, footer a:hover {
     display: block;
     padding: 0.5em;
-    margin: 0;
+    margin: 0px;
   }
 }
 footer .spacertop {
