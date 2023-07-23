@@ -419,11 +419,6 @@ footer {
   margin-top: 5em;
   color: #19161f;
 }
-@media (max-width: 53.9375em) {
-  footer {
-    margin-top: 0.5em;
-  }
-}
 footer p {
   width: 100%;
   margin: 1em auto 0 0;
@@ -457,6 +452,11 @@ footer .spacertop {
   text-align: center;
   margin: 0;
   margin-bottom: 3.5em;
+}
+@media (max-width: 53.9375em) {
+  footer .spacertop {
+    margin-bottom: 0px;
+  }
 }
 footer .spacertop img {
   text-align: center;
